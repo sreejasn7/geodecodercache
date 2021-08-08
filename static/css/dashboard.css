@@ -1,0 +1,811 @@
+@font-face {
+    font-family: Nexa;
+    src: url(NexaLight.otf);
+}
+
+@font-face {
+    font-family: Nexa_bold;
+    src: url(NexaBold.otf);
+}
+
+body {
+    font-size: .875rem;
+    overflow: hidden;
+}
+
+.feather {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+}
+
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    /* Behind the navbar */
+    padding: 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    background-color: #333951;
+    
+}
+
+.sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 48px;
+    /* Height of navbar */
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* Scrollable contents if viewport is shorter than content. */
+    margin-top: 170px;
+}
+
+.sidebar .nav-link {
+    font-weight: 10;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+.sidebar .nav-link .feather {
+    margin-right: 4px;
+    color: rgb(255, 246, 246);
+}
+
+.sidebar .nav-link.active {
+    color: #000000;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+    color: inherit;
+}
+
+.sidebar-heading {
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, .25);
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .form-control {
+    padding: .75rem 1rem;
+    border-width: 0;
+    border-radius: 0;
+}
+
+.form-control-dark {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .1);
+    border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+
+/*
+ * Utilities
+ */
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+/* font */
+
+/* .font_nexa { */
+    /* font-family: Nexa; */
+/* } */
+
+.font_nexa_bold {
+    /* font-family: Nexa_bold; */
+    font-size: 16px;
+}
+
+
+/* Side bar */
+
+.heading_godseye {
+    margin-top: 25px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+
+.heding_1 {
+    font-size: 30px;
+    font-weight: 700;
+    /* font-family: Nexa_bold; */
+}
+
+.heading_2 {
+    color: #333951;
+    font-weight: bold;
+    font-size: 14px;
+    /* font-family: Nexa_bold; */
+}
+
+.font_2 {
+    /* font-family: Nexa_bold; */
+    color: #363636;
+    font-size: 15px;
+    font-weight: bold;
+    /* margin-top: 3px; */
+}
+
+.font_3 {
+    color: #FF391A;
+    font-weight: bold;
+    font-size: 15px;
+    /* font-family: Nexa_bold; */
+    border-bottom: 5px solid #FF391A;
+}
+
+.color_ {
+    color: #FF391A;
+}
+
+.font_4 {
+    font-size: 16px;
+    margin-top: 5px;
+    /* font-family: Nexa_bold; */
+    color: #BBBBBB;
+}
+
+.font_5 {
+    color: #FF9C1A;
+    font-weight: bold;
+    font-size: 13px;
+    margin-left: 20px;
+    font-family: Nexa_bold;
+}
+
+.font_6 {
+    color: #333951;
+    font-weight: bold;
+    font-size: 12px;
+    /* font-family: Nexa_bold; */
+}
+
+.font_6_1 {
+    color: #333951;
+    font-weight: bold;
+    font-size: 12px;
+    /* font-family: Nexa; */
+}
+
+.font_7 {
+    color: #FF9C1A;
+    font-weight: bold;
+    font-size: 10px;
+    /* font-family: Nexa; */
+}
+
+.font_8 {
+    color: #FF9C1A;
+    font-size: 45px;
+    font-weight: 900;
+    /* margin-top: 5px; */
+    /* font-family: Nexa_bold; */
+}
+
+.font_9 {
+    color: #FF9C1A;
+    font-weight: bold;
+    font-size: 9px;
+    margin-top: 1px;
+    margin-left: -10px;
+}
+
+.main {
+    margin-left: 9%;
+    margin-top:3px;
+}
+
+.nav-item {
+    margin-top: 18px;
+}
+
+.nav_link {
+    border-bottom: 2px solid #FF391A;
+}
+
+/* div#root { */
+    /* position: fixed; */
+    /* width: 100%; */
+    /* height: 100%; */
+    /* position: relative; */
+/* } */
+
+#root .btn {
+    position: absolute;
+    top: 80%;
+    left: 86%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    color: rgb(39, 38, 38);
+    font-size: 16px;
+    padding: 10px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    text-align: center;
+}
+
+#root .bts {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /* background-color: rgb(255, 255, 255); */
+    color: rgb(233, 166, 79);
+    font-size: 16px;
+    padding: 6px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    text-align: center;
+}
+
+#root .btt {
+    position: absolute;
+    top: 80%;
+    left: 74%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    color: rgb(233, 166, 79);
+    font-size: 16px;
+    padding: 9px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    text-align: center;
+}
+
+#root .bt_place {
+    position: absolute;
+    top: 13%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /* background-color: rgb(255, 255, 255); */
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding: 6px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    text-align: center;
+    font-family: Nexa;
+}
+
+#root .bt_live {
+    position: absolute;
+    top: 21%;
+    left: 11%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /* background-color: rgb(255, 255, 255); */
+    color: rgb(255, 255, 255);
+    font-size: 7px;
+    padding: 6px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    text-align: center;
+    font-family: Nexa;
+}
+
+#root .bt_code {
+    position: absolute;
+    top: 8%;
+    left: 88%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /* background-color: rgb(255, 255, 255); */
+    color: rgb(255, 255, 255);
+    font-size: 7px;
+    padding: 6px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    text-align: center;
+    font-family: Nexa;
+}
+
+div#root>iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+div#root>img {
+    /* display: block; */
+    width: 100%;
+    height: 100%;
+    border: none;
+    max-height:270px;
+}
+
+.div_scroll {
+    overflow-y: scroll;
+    height: 75vh;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+#ex1 .badges:after {
+    content: "3";
+    position: absolute;
+    background: #FF9C1A;
+    height: 0.7rem;
+    top: 0.6rem;
+    right: 5rem;
+    width: 0.7rem;
+    text-align: center;
+    line-height: 0.7rem;
+    ;
+    font-size: 0.5rem;
+    border-radius: 50%;
+    color: white;
+    /* border: 1px solid blue; */
+}
+
+
+/* righ side div col-3 */
+
+.div_2 {
+    background-color: #F9F9F9;
+}
+
+.heighttext {
+    height: 40px;
+    width: 100%;
+    border: 0ch;
+}
+
+.search {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.search input {
+        text-indent: 30px;
+        /* font-family: FontAwesome, sans-serif; */
+        border: 1px solid #e0e3e5;
+        border-radius: 25px;
+}
+
+.search .fa-search {
+    position: absolute;
+    top: 9px;
+    left: 4%;
+    font-size: 23px;
+    color: rgb(224, 212, 212);
+}
+
+input {
+    width: 40px;
+    padding: 5px;
+    margin-top: 0px;
+    height: 25px;
+    outline: none
+}
+
+.close-icon {
+    border: 1px;
+    background-color: transparent;
+    margin-top: -61px;
+    margin-right: -305px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    outline: 0;
+    cursor: pointer;
+}
+
+.close-icon:after {
+    content: "X";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: 1;
+    right: -40px;
+    top: 0;
+    bottom: 25px;
+    margin: auto;
+    padding: 2px;
+    border-radius: 50%;
+    text-align: center;
+    color: gray;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.search-box:not(:valid)~.close-icon {
+    display: none;
+    background-color: transparent;
+}
+
+
+/*  */
+
+.font_10 {
+    color: #333951;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: Nexa_bold;
+}
+
+.font_11 {
+    color: rgb(214, 55, 55);
+    font-weight: bold;
+    font-size: 13px;
+    font-family: Nexa;
+}
+
+.font_11_critical {
+    color: rgb(214, 55, 55);
+    font-weight: bold;
+    font-size: 13px;
+    font-family: Nexa_bold;
+}
+
+.font_12 {
+    color: rgb(243, 154, 20);
+    font-weight: bold;
+    font-size: 13px;
+    font-family: Nexa;
+}
+
+.font_13 {
+    color: #34C52F;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: Nexa;
+}
+
+
+/* slider */
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    /* max-width: 1000px; */
+    position: relative;
+    margin: auto;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    /* padding: 16px; */
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    /* border-radius: 0 3px 3px 0; */
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    /* border-radius: 3px 0 0 3px; */
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    /* background-color: rgba(0, 0, 0, 0.8); */
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.actives,
+#dots:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+
+/* //////////////////////////////////////////////////////////////////// */
+
+
+/* image slider */
+
+
+/* Slideshow container */
+
+.mySlides_image {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container_image {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    /* padding: 16px; */
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    /* border-radius: 0 3px 3px 0; */
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    /* border-radius: 3px 0 0 3px; */
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    /* background-color: rgba(0, 0, 0, 0.8); */
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot_img {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.actives,
+#dot_img:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+
+/* ///////////////////////////////////////////// */
+
+
+/* last image slide */
+
+
+/* The dots/bullets/indicators */
+
+.dot_img2 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.actives,
+#dot_img2:hover {
+    background-color: #717171;
+}
+
+.card {
+    box-shadow: 1px 1px 1px 1px #ccc;
+}

@@ -1,0 +1,217 @@
+/* .active-pink-4 input[type=text]:focus:not([readonly]) {
+    border: 1px solid #f48fb1;
+    box-shadow: 0 0 0 1px #f48fb1;
+  }
+  .active-pink-3 input[type=text] {
+    border: 1px solid #f48fb1;
+    box-shadow: 0 0 0 1px #f48fb1;
+  } */
+  /* .active-purple-4 input[type=text]:focus:not([readonly]) {
+    border: 1px solid #ce93d8;
+    box-shadow: 0 0 0 1px #ce93d8;
+  }
+  .active-purple-3 input[type=text] {
+    border: 1px solid #ce93d8;
+    box-shadow: 0 0 0 1px #ce93d8;
+  }
+  .active-cyan-4 input[type=text]:focus:not([readonly]) {
+    border: 1px solid #4dd0e1;
+    box-shadow: 0 0 0 1px #4dd0e1;
+  }
+  .active-cyan-3 input[type=text] {
+    border: 1px solid #4dd0e1;
+    box-shadow: 0 0 0 1px #4dd0e1;
+  } */
+
+  .toggle-handle.btn.btn-default{
+    background: purple;
+  }
+  .btn.btn-default.active.toggle-off{
+    background-color: lightgray;
+  }
+  .toggle.btn{
+    width:120px !important;
+  }
+  .overflow-auto {
+
+      overflow-x: auto;
+      display: inline-block;
+      float: none;
+      white-space: nowrap;
+      width:101.5%;
+
+  }
+  
+  .overflow-auto > .col-xl-4 {
+
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+  display: inline-block;
+
+  }
+
+  .overflow-auto > .col-xl-2 {
+
+
+display: inline-block;
+
+}
+.overflow-auto > .col-xl-2 img{
+
+height:150px;
+
+}
+
+  .chart-area {
+      height: 18rem;
+  }
+
+  .view_in_original{
+
+      top: 43%;
+      position: relative;
+      border: None;
+      background:white;
+      border-radius: 25px;
+      color: brown;
+      left: -7%;
+      padding:5px;
+      width:26px;
+  
+  }
+  .sidebar-dark .sidebar-heading {
+  color: chartreuse;
+}
+.bg-gradient-primary {
+  background-color:#51800c;
+  background-size: cover;
+  background-image:none;
+}
+
+table, th, td {
+    border: 1px solid gainsboro;
+  }
+  td{
+    padding: 20px;
+  }
+  #violation_first .card-body {
+    padding: 5px !important;
+}
+
+.sidebar{
+  width: 10rem !important;
+}
+
+#dashboard .card-body{
+  padding:0px;
+}
+
+#dashboard .card-header{
+  border-bottom: 0px;
+  background-color: white;
+}
+
+#dashboard .shadow{
+  box-shadow : none !important;
+}
+
+body{
+  color: #060818;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+}
+
+.badge-danger{
+  background-color: #f0a682;
+}
+
+.topbar.navbar-light .navbar-nav .nav-item .nav-link {
+
+  color: #06091f;
+  
+}
+
+.badge{
+
+  border-radius: 100px;
+}
+
+.sidebar .nav-item .nav-link .badge-counter, .topbar .nav-item .nav-link .badge-counter{
+
+  right: 1.5rem;
+  margin-top: -.8rem;
+}
+
+
+
+#dashboard .container{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+#dashboard .mt-4, .my-4{
+  margin-top: 1rem !important;
+
+}
+
+
+.nav-link.active{
+  color:red !important;
+}
+
+
+#dashboard .nav-link{
+  color:gray ;
+}
+
+
+#wrapper  #content-wrapper{
+  background-color: white;
+}
+
+
+.sidebar .nav-item .nav-link{
+  width: inherit !important;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+  /* max-height: 0%; */
+}
+
+/* form.uploadButton {
+  position: relative;
+  display: flex;
+}
+
+/* input[type="text"] {
+  width: 200px;
+  height: 40px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  margin-right: 5px;
+}
+
+.form-group span {
+  background: red;
+  border: 0;
+  color: #fff;
+  padding: 0 20px;
+  width: 80px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+input[type="file"] {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+}  */ 

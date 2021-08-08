@@ -1,0 +1,18 @@
+{
+    "camera_one" : {
+        "cam_name" : "Cam_L1",
+        "location" : "Market One",
+        "cam_id"   : "CAMID01"
+    },
+    "camera_two" : {
+        "cam_name" : "Cam_L2",
+        "location" : "Market Two",
+        "cam_id"   : "CAMID02"
+    },
+    "camera_three" : {
+        "cam_name" : "Cam_L3",
+        "location" : "Market Three",
+        "cam_id"   : "CAMID02"
+    }
+
+}
