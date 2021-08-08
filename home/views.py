@@ -5,7 +5,10 @@ import requests
 from django.views import View
 from xml.etree import ElementTree
 
- 
+def index(request):
+    return HttpResponse('Hi there')
+
+
 class ReverseGeoDecoder(View):
 
     def get(self,request,*args, **kwargs):
@@ -37,7 +40,7 @@ class ReverseGeoDecoder(View):
                 #In case of a new entry , the data from the API is saved to DB via `save_cache`
                 save_cache(output['name'], lat , long)
             output_json = output
-            
+
         else:
             #In case of a lat and long request which exists in DB as well as the date has not been expired , then data from the DB is fetched
             output_json['name'] = cordinates_mobj.name
