@@ -1,7 +1,5 @@
 from django.db import models
 
-# Create your models here.
-
 class GeoDecodderCache(models.Model):
     lat = models.FloatField(default=None)
     long = models.FloatField(default=None)

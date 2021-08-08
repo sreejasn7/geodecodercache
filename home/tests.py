@@ -1,5 +1,3 @@
-# from django.test import TestCase
-
 from django.test import RequestFactory, TestCase
 from home.views import ReverseGeoDecoder
 from requests.exceptions import Timeout
