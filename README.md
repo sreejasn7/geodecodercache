@@ -1,15 +1,22 @@
 ### Procedures
 
 * Python Version - 3.8
+
 * Framework - Django
+
 * Note: Create an environment if necessary
 
-    $ git clone https://github.com/sreejasn7/geodecodercache.git
-    $ cd geodecodercache
-    $ pip install -r requirements.txt
-    $ python manage.py makemigrations
-    $ python manage.py migrate
-    $ python manage.py createsuperuser
+        $ git clone https://github.com/sreejasn7/geodecodercache.git
+
+        $ cd geodecodercache
+
+        $ pip install -r requirements.txt
+
+        $ python manage.py makemigrations
+
+        $ python manage.py migrate
+
+        $ python manage.py createsuperuser
 
 
 ### Outputs 
